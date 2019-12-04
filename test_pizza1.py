@@ -1,7 +1,14 @@
+"""
+docstring
+"""
 import pizza1
 
 
 def test_pizza():
+    """
+
+    :return:
+    """
     p = pizza1.Pizza()
     assert p.make_recipe() == """Make dough
 Add ham
@@ -11,6 +18,10 @@ Bake"""
 
 
 def test_popcornpizza():
+    """
+
+    :return:
+    """
     p = pizza1.PopcornPizza()
     assert p.make_recipe() == """Make dough
 Add ham
@@ -19,7 +30,11 @@ Add cheese
 Bake"""
 
 
-def test_popcornpizza():
+def test_choclatepizza():
+    """
+
+    :return:
+    """
     p = pizza1.ChoclatePizza()
     assert p.make_recipe() == """Make dough
 Add fish
