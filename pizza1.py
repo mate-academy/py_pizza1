@@ -1,10 +1,55 @@
+'''
+Module
+'''
+
+
 class Pizza:
-    pass
+    '''Parent class'''
+    def __init__(self, ingred):
+        self.ingred = ingred
+
+    def make_recipe(self):
+        '''
+
+        :return:
+        '''
+        strng = 'Make dough\n'
+        for i in self.ingred:
+            strng += 'Add {}\n'.format(i)
+        strng += 'Bake'
+        return strng
+
+    def add_ingred(self, item):
+        '''
+
+        :param item:
+        :return:
+        '''
+        self.ingred.append(item)
+
+
+class StandartPizza(Pizza):
+    '''
+    Class
+    '''
+    def __init__(self):
+        self.ingred = ['ham', 'tomatoes', 'cheese']
+        super().__init__(self.ingred)
 
 
 class PopcornPizza(Pizza):
-    pass
+    '''
+    Class
+    '''
+    def __init__(self):
+        self.ingred = ['ham', 'popcorn', 'cheese']
+        super().__init__(self.ingred)
 
 
 class ChoclatePizza(Pizza):
-    pass
+    '''
+    class
+    '''
+    def __init__(self):
+        self.ingred = ['fish', 'popcorn', 'chocolate']
+        super().__init__(self.ingred)
