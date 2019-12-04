@@ -3,7 +3,6 @@
 
 class Pizza:
     """class to represent usual pizza"""
-
     def make_recipe(self):
         """return recipe for pizza"""
         return ("Make dough\n" +
@@ -14,47 +13,45 @@ class Pizza:
 
     @staticmethod
     def get_first_ingredient():
-        """return list of ingredients"""
+        """return first ingredient"""
         return "Add ham"
 
     @staticmethod
     def get_second_ingredient():
-        """return list of ingredients"""
+        """return second ingredient"""
         return "Add tomatoes"
 
     @staticmethod
     def get_third_ingredient():
-        """return list of ingredients"""
+        """return third ingredient"""
         return "Add cheese"
 
 
 class PopcornPizza(Pizza):
     """class to represent special kind of pizza with popcorn"""
-
     def get_first_ingredient(self):
-        """return list of ingredients"""
+        """return first ingredient"""
         return "Add ham"
 
     def get_second_ingredient(self):
-        """return list of ingredients"""
+        """return second ingredient"""
         return "Add popcorn"
 
     def get_third_ingredient(self):
-        """return list of ingredients"""
+        """return third ingredient"""
         return "Add cheese"
 
 
 class ChocolatePizza(Pizza):
     """class to represent special kind of pizza with chocolate"""
-
     def get_first_ingredient(self):
-        """return list of ingredients"""
+        """return first ingredient"""
         return "Add fish"
 
     def get_second_ingredient(self):
-        """return list of ingredients"""
+        """return second ingredient"""
         return "Add popcorn"
 
     def get_third_ingredient(self):
-        """return list of ingredients"""
+        """return third ingredient"""
         return "Add chocolate"
