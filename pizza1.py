@@ -3,30 +3,58 @@
 
 class Pizza:
     """class to represent usual pizza"""
-    def __init__(self):
-        self.ingredients = ["ham", "tomatoes", "cheese"]
 
     def make_recipe(self):
         """return recipe for pizza"""
-        recipe = "Make dough\n"
-        for ingredient in self.ingredients:
-            recipe += f"Add {ingredient}\n"
-        return recipe + "Bake"
+        return ("Make dough\n" +
+                self.get_first_ingredient() + "\n" +
+                self.get_second_ingredient() + "\n" +
+                self.get_third_ingredient() + "\n" +
+                "Bake")
 
-    def get_ingredients(self):
+    @staticmethod
+    def get_first_ingredient():
         """return list of ingredients"""
-        return self.ingredients
+        return "Add ham"
+
+    @staticmethod
+    def get_second_ingredient():
+        """return list of ingredients"""
+        return "Add tomatoes"
+
+    @staticmethod
+    def get_third_ingredient():
+        """return list of ingredients"""
+        return "Add cheese"
 
 
 class PopcornPizza(Pizza):
     """class to represent special kind of pizza with popcorn"""
-    def __init__(self):
-        super().__init__()
-        self.ingredients = ["ham", "popcorn", "cheese"]
+
+    def get_first_ingredient(self):
+        """return list of ingredients"""
+        return "Add ham"
+
+    def get_second_ingredient(self):
+        """return list of ingredients"""
+        return "Add popcorn"
+
+    def get_third_ingredient(self):
+        """return list of ingredients"""
+        return "Add cheese"
 
 
 class ChocolatePizza(Pizza):
     """class to represent special kind of pizza with chocolate"""
-    def __init__(self):
-        super().__init__()
-        self.ingredients = ["fish", "popcorn", "chocolate"]
+
+    def get_first_ingredient(self):
+        """return list of ingredients"""
+        return "Add fish"
+
+    def get_second_ingredient(self):
+        """return list of ingredients"""
+        return "Add popcorn"
+
+    def get_third_ingredient(self):
+        """return list of ingredients"""
+        return "Add chocolate"
