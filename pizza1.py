@@ -26,7 +26,10 @@ class Pizza:
         :param new_ingrt:
         :return:
         """
-        return [new_ingrt if ingrt == prev_ingrt else ingrt for ingrt in self.ingrts]
+        for i, ingrt in enumerate(self.ingrts):
+            if ingrt == prev_ingrt:
+                assert isinstance(new_ingrt, str)
+                self.ingrts[i] = new_ingrt
 
     def make_recipe(self):
         """
