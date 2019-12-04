@@ -1,6 +1,6 @@
 # py_pizza1
 
-Create a class to generate pizza recipe. Provide for the ability to change ingredients in subclasses.
+Create a class to generate pizza recipe. Provide the ability to change ingredients in subclasses.
 
 To deploy project on your local machine create new virtual environment and execute this command:
 
