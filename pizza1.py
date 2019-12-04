@@ -5,8 +5,8 @@ Module
 
 class Pizza:
     '''Parent class'''
-    def __init__(self, ingred):
-        self.ingred = ingred
+    def __init__(self, ingred=('ham', 'tomatoes', 'cheese')):
+        self.ingred = list(ingred)
 
     def make_recipe(self):
         '''
@@ -26,15 +26,6 @@ class Pizza:
         :return:
         '''
         self.ingred.append(item)
-
-
-class StandartPizza(Pizza):
-    '''
-    Class
-    '''
-    def __init__(self):
-        self.ingred = ['ham', 'tomatoes', 'cheese']
-        super().__init__(self.ingred)
 
 
 class PopcornPizza(Pizza):
