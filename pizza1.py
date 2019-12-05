@@ -34,7 +34,7 @@ class PopcornPizza(Pizza):
     """This is subclass inheriting all methods of parent class"""
     def __init__(self):
         """Distinguish the unique ingredients list"""
-        super().__init__(self)
+        super().__init__()
         self.list_of_ingredients = ["ham", "popcorn", "cheese"]
 
 
@@ -42,5 +42,5 @@ class ChocolatePizza(Pizza):
     """This is subclass inheriting all methods of parent class"""
     def __init__(self):
         """Distinguish the unique ingredients list"""
-        super().__init__(self)
+        super().__init__()
         self.list_of_ingredients = ["fish", "popcorn", "chocolate"]
