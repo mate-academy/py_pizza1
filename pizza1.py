@@ -6,31 +6,67 @@ Provide the ability to change ingredients in subclasses.
 
 class Pizza:
     """Pizza class"""
-    def __init__(self):
-        self.ingredients = ['ham', 'tomatoes', 'cheese']
 
     def make_recipe(self):
         """Returns pizza recipe"""
-        strg = "Make dough\n"
-        for i in self.ingredients:
-            strg += "Add {}\n".format(i)
-        return strg + "Bake"
+        return ("Make dough\n" +
+                self.get_ing1() + "\n" +
+                self.get_ing2() + "\n" +
+                self.get_ing3() + "\n" +
+                "Bake")
 
-    def get_ingredients(self):
+    @staticmethod
+    def get_ing1():
         """Returns pizza ingredients"""
-        return self.ingredients
+        return "Add ham"
+
+    @staticmethod
+    def get_ing2():
+        """Returns pizza ingredients"""
+        return "Add tomatoes"
+
+    @staticmethod
+    def get_ing3():
+        """Returns pizza ingredients"""
+        return "Add cheese"
 
 
 class PopcornPizza(Pizza):
     """PopcornPizza subclass Pizza"""
-    def __init__(self):
-        super().__init__()
-        self.ingredients = ['ham', 'popcorn', 'cheese']
 
+    @staticmethod
+    def get_ing1():
+        """Returns pizza ingredients"""
+        return "Add ham"
+
+    @staticmethod
+    def get_ing2():
+        """Returns pizza ingredients"""
+        return "Add popcorn"
+
+    @staticmethod
+    def get_ing3():
+        """Returns pizza ingredients"""
+        return "Add cheese"
 
 
 class ChoclatePizza(Pizza):
     """ChoclatePizza subclass Pizza"""
-    def __init__(self):
-        super().__init__()
-        self.ingredients = ['fish', 'popcorn', 'chocolate']
+
+
+    @staticmethod
+    def get_ing1():
+        """Returns pizza ingredients"""
+        return "Add fish"
+
+
+    @staticmethod
+    def get_ing2():
+        """Returns pizza ingredients"""
+        return "Add popcorn"
+
+
+    @staticmethod
+    def get_ing3():
+        """Returns pizza ingredients"""
+        return "Add chocolate"
