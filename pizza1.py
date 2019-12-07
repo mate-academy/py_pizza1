@@ -52,9 +52,9 @@ class ChoclatePizza(Pizza):
         self._recipe.append('Add fish')
 
     def add_2nd_ingredient(self):
-        """First ingredient"""
+        """Second ingredient"""
         self._recipe.append('Add popcorn')
 
     def add_3rd_ingredient(self):
-        """First ingredient"""
+        """Third ingredient"""
         self._recipe.append('Add chocolate')
