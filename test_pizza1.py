@@ -19,8 +19,8 @@ Add cheese
 Bake"""
 
 
-def test_popcornpizza():
-    p = pizza1.ChoclatePizza()
+def test_chocolatepizza():
+    p = pizza1.ChocolatePizza()
     assert p.make_recipe() == """Make dough
 Add fish
 Add popcorn
